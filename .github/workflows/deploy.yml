@@ -17,8 +17,8 @@ jobs:
         id: file_changes
         uses: tj-actions/changed-files@v39
         with:
-          files: **/**
-          files_ignore: **/README.md
+          files: "**/**"
+          files_ignore: "**/README.md"
       - name: List all changed files
         run: echo '${{ steps.file_changes.outputs.all_changed_files }}'
       # - name: List files
