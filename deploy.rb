@@ -1,6 +1,8 @@
 
 require "pp"
 
+pp ARGV
+
 # deps = File.read("dependencies")
 # pp deps
 # 	.split(";")
