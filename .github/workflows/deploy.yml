@@ -24,4 +24,4 @@ jobs:
         with:
           ruby-version: '3.2.2'
       - name: Deploy
-        run: ruby deploy.rb ${{ steps.file_changes.outputs.all_changed_files }}
+        run: ruby deploy.rb ${{ steps.file_changes.outputs.all_modified_files }}
